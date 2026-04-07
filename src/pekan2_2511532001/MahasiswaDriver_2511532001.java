@@ -36,7 +36,7 @@ public class MahasiswaDriver_2511532001 {
 		}
 	// 4. Method untuk hapus mahasiswa berdasarkan NIM
 		public static void hapusMahasiswa_2511532001 (ArrayList<Mahasiswa_2511532001> list, Scanner sc) {
-			System.out.print("Masukkan Prodi: ");
+			System.out.print("Masukkan NIM: ");
 			String nimHapus = sc.nextLine();
 			boolean removed = list.removeIf(mhs -> mhs.nim.equals(nimHapus));
 			
