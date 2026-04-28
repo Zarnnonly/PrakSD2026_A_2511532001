@@ -17,7 +17,6 @@ public class IterasiQueue_2511532001 {
 		while (iterator_2001.hasNext()) {
 			System.out.print(iterator_2001.next() + " ");
 		}
-
 	}
 
 }
