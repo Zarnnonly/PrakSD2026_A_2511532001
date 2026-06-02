@@ -46,15 +46,17 @@ public class MergeSort_2511532001 {
             k_2001++;
         }
     }
-    void sort_2001 (int arr[], int l_2001, int r_2001) {
-    	if (r_2001 < l_2001) {
-    		// find
-    		int m_2001 = (1+l_2001) / 2;
-    		// soft
-    		sort_2001 (arr, 1, m_2001);
-    		sort_2001 (arr, m_2001 + 1, r_2001);
-    		// merge
-    		merge_2001(arr, 1, m_2001, l_2001);
+    void sort_2001(int arr_2001[], int l_2001, int r_2001) {
+        if (l_2001 < r_2001) {
+            // find 
+            int m_2001 = l_2001 + (r_2001 - l_2001) / 2;
+
+            // sort
+            sort_2001(arr_2001, l_2001, m_2001);
+            sort_2001(arr_2001, m_2001 + 1, r_2001);
+
+            // merge
+            merge_2001(arr_2001, l_2001, m_2001, r_2001);
     	}
     }
     static void printArray_2001(int arr[]) {
